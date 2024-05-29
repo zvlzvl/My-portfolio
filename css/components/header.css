@@ -5,7 +5,7 @@
     width: 150px;
     height:fit-content;
 }
-p{
+.p{
     width: 150px;
     height:fit-content;
 }
@@ -27,6 +27,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 !important;
+    margin-top: 0 !important;
 }
 
 .header.active {
