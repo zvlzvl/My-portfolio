@@ -18,11 +18,11 @@
 <body>
     <!-- HEADER -->
     <header>
-        <section class="container header" id="header">
+        <section class="container bg-main header" id="header">
             <div class="row">
                 <div class="header-menu-container">
                     <!-- <img src="" alt="logo">  -->
-                    <p style="color: rgb(212, 0, 145); font-size:50px; font-weight:900;">Zv</p>
+                    <a class ="p" style="color: rgb(212, 0, 145); font-size:50px; font-weight:900;">Zv</a>
 
                     <div>
                         <nav class="menu">
@@ -36,9 +36,9 @@
         </section>
     </header>
 
-    <main>
+    <main class="bg-main">
         <!-- HERO -->
-        <section class="container bg-main">
+        <section class="container">
             <div class="row">
                 <div class="col-8">
                     <h4 class="hero-h4">Živilė Vibrė</h4>
@@ -49,7 +49,7 @@
                         <br>
                         <em class="small">jaunesnioji</em>
                     </h1>
-                    <p>Programavimo darbai. Interneto svetainių, sistemų kūrimas. </p>
+                    <p>Interneto svetainių, sistemų kūrimas, programavimo darbai. </p>
                 </div>
             </div>
         </section>
@@ -88,7 +88,7 @@
             </div>
         </section>
         <!-- PORTFOLIO -->
-        <section class="container">
+        <section class="container bg-main">
 
             <div class="row">
                 <div class="col-12">
@@ -116,25 +116,28 @@
     </main>
     <!-- FOOTER -->
     <footer>
-        <section class="container bg-dark">
-            <div class="row">
-                <div class="col-6">
-                    <img src="" alt="logo">
+            <section class="container bg-dark">
+                <div class="row footer">
+                    <div class="header-menu-container">
+                        <!-- <img src="" alt="logo">  -->
+                        <p class ="p" style="color: white; font-size:50px; font-weight:900;">Zv</p>
+    
+                        <div>
+                            <nav class="menu">
+                                <a class="link-footer" href="#">Apie mane</a>
+                                <a class="link-footer" href="#">Portfolio</a>
+                                <a class="link-footer" href="#">Kontaktai</a>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <nav>
-                        <menu>
-                            MENU
-                        </menu>
-                    </nav>
+                <div class="row">
+                    <div class="col-12">
+                        2022-2024 &copy; Živilė Vibrė
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    2022-2024 &copy; Živilė Vibrė
-                </div>
-            </div>
-        </section>
+            </section>
+
     </footer>
     <!-- musu script -->
     <script src="./js/pages/home.js" type="module" defer></script>
