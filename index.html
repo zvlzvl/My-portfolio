@@ -5,23 +5,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zivile Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/pages/home.css">
     <!-- analytics script -->
 
 </head>
 
 <body>
-    <!-- FB script -->
-    <header></header>
-    <main>
-        <section>Labas</section>
-        <section></section>
-        <section></section>
-        <section></section>    
-    </main>
-    <footer></footer>
+    <!-- HEADER -->
+    <header>
+        <section class="container header" id="header">
+            <div class="row">
+                <div class="header-menu-container">
+                    <!-- <img src="" alt="logo">  -->
+                    <p style="color: rgb(212, 0, 145); font-size:50px; font-weight:900;">Zv</p>
 
-    <script src=".'js/pages/home.js" defer></script>
+                    <div>
+                        <nav class="menu">
+                            <a class="link" href="#">Apie mane</a>
+                            <a class="link" href="#">Portfolio</a>
+                            <a class="link" href="#">Kontaktai</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="container bg-main">
+            <div class="row">
+                <div class="col-8">
+                    <h4 class="hero-h4">Živilė Vibrė</h4>
+                    <div class="underline"></div>
+                    <h1 class="hero-h1">
+                        <em class="thin">PHP </em>
+                        Programuotoja
+                        <br>
+                        <em class="small">jaunesnioji</em>
+                    </h1>
+                    <p>Programavimo darbai. Interneto svetainių, sistemų kūrimas. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="container bg-dark">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Apie mane</h4>
+                </div>
+                <div class="col-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facilis quod sit neque assumenda
+                        iste corrupti cum ducimus, vitae nemo maxime quos mollitia, esse commodi quisquam ipsa ratione
+                        quam deserunt!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <h4>Patirtis</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum ab sed, beatae in incidunt,
+                        doloribus obcaecati ipsum cum excepturi odio, laboriosam vitae quidem consequatur natus.
+                        Inventore sequi delectus odio veritatis.</p>
+                </div>
+                <div class="col-6">
+                    <h4>Išsilavinimas</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fuga excepturi quia illum veniam
+                        minus debitis culpa molestias expedita officiis error, at et reprehenderit. Sunt itaque
+                        reiciendis magnam vitae modi?</p>
+                </div>
+                <div class="col-6">
+                    <h4>Gebėjimai</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt libero
+                        provident cum ad deleniti sequi esse omnis qui. Vel eos necessitatibus, cupiditate commodi fuga
+                        laudantium distinctio inventore tempora?</p>
+                </div>
+            </div>
+        </section>
+        <!-- PORTFOLIO -->
+        <section class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <h1>Mano darbai</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="" alt="foto">
+                    <p> Aprašymas Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aliquam fuga provident
+                        exercitationem animi non eius blanditiis numquam ipsam possimus tenetur reiciendis debitis
+                        corporis quibusdam placeat cum at sapiente delectus.</p>
+                </div>
+                <div class="col-6">
+                    <img src="" alt="foto">
+                    <p> Aprašymas Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, aliquam fuga provident
+                        exercitationem animi non eius blanditiis numquam ipsam possimus tenetur reiciendis debitis
+                        corporis quibusdam placeat cum at sapiente delectus.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT ME -->
+        <section>contact me</section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <section class="container bg-dark">
+            <div class="row">
+                <div class="col-6">
+                    <img src="" alt="logo">
+                </div>
+                <div class="col-6">
+                    <nav>
+                        <menu>
+                            MENU
+                        </menu>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    2022-2024 &copy; Živilė Vibrė
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- musu script -->
+    <script src="./js/pages/home.js" type="module" defer></script>
+
 </body>
 
 </html>
