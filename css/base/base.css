@@ -2,7 +2,7 @@
     --main-color: #fefaf8;
     --dark-color: #333334;
     --light-grey-color: #fefaf8; 
-    --accent-color: rgb(212, 0, 145);
+    --accent-color: #d40091;
 }
 
 body,
@@ -10,17 +10,19 @@ body * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: "Ubuntu", sans-serif;
+ 
 }
 
 .bg-main {
     margin-top: 100px;
     background-color: var(--main-color);
-    color: #000000;
+    color:var(--dark-color);
 }
 .bg-dark {
     background-color: var(--dark-color);
