@@ -1,0 +1,17 @@
+
+.title{
+    width: 100%;
+    display: inline-block;
+  }
+div.title h3{
+    font-size: 30px;
+    line-height: 70px;
+    float:left;
+    margin-left: 10px;
+}
+div.title img{
+    float:left;
+}
+.education{
+    border-bottom: 2px solid grey;
+}
