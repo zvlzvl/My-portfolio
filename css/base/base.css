@@ -33,9 +33,7 @@ body {
     background-color: var(--black-color);
     color: var(--main-color); 
 }
-.hero{
-    margin-top: 100px;
-}
+
 /* .bg-grey {
     background-color: #bcbcbc;
     color: black;

@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/pages/home.css">
     <!-- analytics script -->
 
@@ -19,24 +23,33 @@
     <!-- HEADER -->
     <header>
         <section class="container bg-main header" id="header">
-            <div class="row">
-                <div class="header-menu-container">
-                    <img height="60px" width="auto" src="./img/zlogo.png" alt="logo">
-                    <!-- <a class ="p" style="color: rgb(212, 0, 145); font-size:50px; font-weight:900;">Zv</a> -->
-
-                    <div>
-                        <nav class="menu">
-                            <a class="link" href="#">Apie mane</a>
-                            <a class="link" href="#">Portfolio</a>
-                            <a class="link" href="#">Kontaktai</a>
-                        </nav>
+            <div class="hidden visible-flex-lg header-menu-container nav">
+                <img class="logo" src="./img/zlogo.png" alt="logo">
+                <div class="nav">
+                    <nav class="menu">
+                        <a class="link" href="#">Apie mane</a>
+                        <a class="link" href="#">Portfolio</a>
+                        <a class="link" href="#">Kontaktai</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="nav hidden-lg">
+                <div class="mobile-container">
+                    <div class="topnav">
+                        <img class="logo" src="./img/zlogo.png" alt="logo">
+                        <div id="myLinks">
+                            <a href="#news">News</a>
+                            <a href="#contact">Contact</a>
+                            <a href="#about">About</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </header>
-
-
 
     <main class="bg-main">
         <!-- HERO -->
@@ -61,7 +74,9 @@
         </section>
 
         <!-- ABOUT -->
-        <section class="container-cut"><section class="container dark-right-up"></section></section>
+        <section class="container-cut">
+            <section class="container dark-right-up"></section>
+        </section>
         <section class="container bg-dark">
             <div class="row">
                 <div class="col-12">
@@ -98,7 +113,9 @@
                 </div>
             </div>
         </section>
-        <section class="container-cut"><section class="container dark-right-down"></section></section>
+        <section class="container-cut">
+            <section class="container dark-right-down"></section>
+        </section>
 
 
         <section class="container bg-main">
@@ -125,9 +142,11 @@
             </div>
         </section>
 
-     
+
         <!-- PORTFOLIO -->
-        <section class="container-cut"><section class="container black-right-up"></section></section>
+        <section class="container-cut">
+            <section class="container black-right-up"></section>
+        </section>
         <section class="container bg-black">
             <div class="row">
                 <div class="col-12">
@@ -149,9 +168,11 @@
                 </div>
             </div>
         </section>
-        <section class="container-cut"><section class="container black-right-down"></section></section>
+        <section class="container-cut">
+            <section class="container black-right-down"></section>
+        </section>
         <!-- CONTACT ME -->
-   
+
         <section class="container bg-main">contact me</section>
     </main>
 
@@ -183,7 +204,14 @@
     </footer>
     <!-- musu script -->
     <script src="./js/pages/home.js" type="module" defer></script>
-
+    <script>function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }</script>
 </body>
 
 </html>

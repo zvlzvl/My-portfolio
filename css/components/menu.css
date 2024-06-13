@@ -1,0 +1,43 @@
+
+  .mobile-container {
+    color: white;
+    border-radius: 10px;
+  }
+  .logo{
+    height:60px;
+     width: auto;
+  }
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+   
+  }
+  
+  .topnav a {
+    color: var(--dark-color);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: none;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+  }
+  /* .fa-bars{
+height: 100px;
+  } */
+  .topnav a:hover {
+    /* background-color: #ddd; */
+    color: black;
+  }
+  
