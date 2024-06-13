@@ -9,7 +9,7 @@ body,
 body * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 
 }
 
@@ -20,7 +20,6 @@ body {
 }
 
 .bg-main {
-    margin-top: 100px;
     background-color: var(--main-color);
     color: var(--dark-color);
 }
@@ -32,13 +31,15 @@ body {
 
 .bg-black {
     background-color: var(--black-color);
-    color: var(--main-color);
+    color: var(--main-color); 
 }
-
-.bg-grey {
+.hero{
+    margin-top: 100px;
+}
+/* .bg-grey {
     background-color: #bcbcbc;
     color: black;
-}
+} */
 
 p {
     margin-top: 20px;
@@ -55,10 +56,26 @@ h1 {
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1.05em;
     font-weight: 500;
     position: relative;
+    padding: 5px;
+}
+
+h2.center{
+    text-align: center;
+}
+h2.center:after{
+    width: 100px;
+    height: 3px;
+    background: var(--accent-color);
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -10px;
 }
 
 h2:after {
@@ -73,3 +90,29 @@ h2:after {
     bottom: -10px;
 }
 
+
+.container-cut{
+    width: 100%;
+    float: left;
+    background-color: var(--main-color);
+}
+.dark-right-up {
+    background-color: var(--dark-color);
+    clip-path: polygon(100% 0%, 0% 101%, 100% 101%);
+   padding: -1px;
+  }
+.dark-right-down {
+    background-color: var(--dark-color);
+    clip-path: polygon( 100% -1%, 100% 100%, 0% 0%);
+  }
+
+.black-right-up {
+    background-color: var(--black-color);
+    clip-path: polygon(100% 0%, 0% 101%, 100% 101%);
+ 
+  }
+.black-right-down {
+    background-color: var(--black-color);
+    clip-path: polygon( 100% -1%, 100% 100%, 0% -1%);
+
+  }

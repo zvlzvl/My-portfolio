@@ -49,6 +49,7 @@
     width: 100%;
     padding: 60px 0;
     float: left;
+   
 }
 .container > .row {
     width: var(--width);
