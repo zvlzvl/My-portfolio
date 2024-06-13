@@ -14,15 +14,17 @@
   
   .topnav #myLinks {
     display: none;
-   
   }
   
   .topnav a {
     color: var(--dark-color);
     padding: 14px 16px;
-    text-decoration: none;
+    /* border-bottom: 1px solid var(--dark-color); */
+    text-decoration:none;
     font-size: 17px;
     display: block;
+    border-bottom: 2px solid transparent ;
+  
   }
   
   .topnav a.icon {
@@ -32,12 +34,14 @@
     right: 0;
     top: 0;
     font-size: 30px;
-  }
-  /* .fa-bars{
-height: 100px;
-  } */
-  .topnav a:hover {
-    /* background-color: #ddd; */
-    color: black;
-  }
   
+  }
+
+  .topnav a:hover {
+    color: black;
+   border-bottom: 2px solid var(--accent-color);
+  }
+  .topnav a.icon:hover {
+    color:black;
+    border:none;
+  }
