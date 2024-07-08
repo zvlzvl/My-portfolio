@@ -10,7 +10,6 @@ body * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -34,11 +33,6 @@ body {
     color: var(--main-color);
 }
 
-/* .bg-grey {
-    background-color: #bcbcbc;
-    color: black;
-} */
-
 p {
     margin-top: 20px;
     font-size: 28px;
@@ -48,7 +42,7 @@ p {
 
 h1 {
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 500;
     line-height: 1.05em;
     /* text-transform: capitalize; */
@@ -102,7 +96,19 @@ h2:after {
     margin: auto;
     bottom: -10px;
 }
+h4{
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing:0.03em;
+    font-style: italic;
+    margin: 10px 0;
+}
+h5{
+    font-size: 24px;
+    letter-spacing:0.03em;
+    margin-top: 20px;
 
+}
 
 .container-cut {
     width: 100%;
@@ -138,14 +144,26 @@ h2:after {
     margin-top: -2px;
 }
 
-.align {
+.align-left {
     text-align: center;
     font-weight: 200;
     letter-spacing:2px;
 }
+.align-right {
+    text-align: center;
+}
 
 @media (min-width: 768px) {
-    .align {
+    .align-left {
         text-align: left;
+    }
+    .align-right{
+        text-align: right;          
+    }
+    .vertical-center{
+        display: flex;
+        flex-direction: row;
+        align-items: center;  
+        margin-top: 0!important;
     }
 }
