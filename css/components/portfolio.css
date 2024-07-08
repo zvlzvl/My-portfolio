@@ -1,8 +1,18 @@
-.portf-img {
+.portf-content {
+    color: #DDDDDD;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0,05em;
+}
+.portf-img{
     border-radius: 10px;
 }
-
-.portf-content {
-    color: #DCDCDC;
-    font-weight: 300;
+ul{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #AAAAAA;
+}
+.align-center{
+    display: flex;
+    align-items: center;
 }
