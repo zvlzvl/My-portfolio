@@ -7,10 +7,6 @@
     <title>Zivile Dev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/pages/home.css">
     <!-- analytics script -->
 
@@ -24,9 +20,9 @@
                 <img class="logo" src="./img/zlogo.png" alt="logo">
                 <div class="nav">
                     <nav class="menu">
-                        <a class="link" href="#about">Apie mane</a>
-                        <a class="link" href="#work">Portfolio</a>
-                        <a class="link" href="#contacts">Kontaktai</a>
+                        <a class="link" href="/#about">Apie mane</a>
+                        <a class="link" href="/#work">Portfolio</a>
+                        <a class="link" href="/#contacts">Kontaktai</a>
                     </nav>
                 </div>
             </div>
@@ -35,11 +31,11 @@
                     <div class="topnav">
                         <img class="logo" src="./img/zlogo.png" alt="logo">
                         <div id="myLinks">
-                            <a href="#news">Apie mane</a>
-                            <a href="#contact">Portfolio</a>
-                            <a href="#about">Kontaktai</a>
+                            <a href="/#about">Apie mane</a>
+                            <a href="/#work">Portfolio</a>
+                            <a href="/#contacts">Kontaktai</a>
                         </div>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <a href="javascript:void(0);" class="icon" onclick="menuLinks()">
                             <i class="fa fa-bars"></i>
                         </a>
                     </div>
@@ -159,7 +155,7 @@
 
             <div class="row">
                 <div class="col-12 col-lg-6 portf-content">
-                    <h3>Traficero.com <br> (jūrinių konteinerių sekimo programa)</h3>
+                    <h3>Traficero.com<br> <em class="thin">(jūrinių konteinerių sekimo programa)</em></h3>
 
                     <h5>Mano funkcijos:</h5>
                     <ul>
@@ -179,10 +175,9 @@
                 <img class="col-12 col-lg-6 portf-img" src='/img/traficero/traficero.png'>
             </div>
             <div class="row">
-
                 <img class="hidden visible-lg col-lg-6 portf-img" src='/img/bitmanija/bitmanija.png'>
                 <div class="col-12 col-lg-6 portf-content">
-                    <h3>bitmanija.lt <br> (internetinė parduotuvė)</h3>
+                    <h3>bitmanija.lt <br><em class="thin">(internetinė parduotuvė)</em></h3>
                     <h5>Mano funkcijos:</h5>
                     <ul>
                         <li>puslapio dizaino kūrimas pasitelkiant WordPress ir Elementor</li>
@@ -257,21 +252,14 @@
                     </a>
                 </div>
 
-
             </div>
         </section>
 
     </footer>
     <!-- musu script -->
     <script src="./js/pages/home.js" type="module" defer></script>
-    <script>function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }</script>
+    <script src="js/components/menu.js" type="module" defer></script>
+
     <script>function scrollAnimate(targethash) {
 
             var offset = 0;
