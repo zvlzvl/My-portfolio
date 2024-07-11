@@ -19,48 +19,22 @@
 
 <body>
     <!-- HEADER -->
-     
-<header>
-    <section class="container bg-main header" id="header">
-        <div class="hidden visible-flex-lg header-menu-container nav">
-            <img class="logo" src="./img/zlogo.png" alt="logo">
-            <div class="nav">
-                <nav class="menu">
-                    <a class="link" href="#about">Apie mane</a>
-                    <a class="link" href="#work">Portfolio</a>
-                    <a class="link" href="#contacts">Kontaktai</a>
-                </nav>
-            </div>
-        </div>
-        <div class="nav hidden-lg">
-            <div class="mobile-container">
-                <div class="topnav">
-                    <img class="logo" src="./img/zlogo.png" alt="logo">
-                    <div id="myLinks">
-                        <a href="#news">Apie mane</a>
-                        <a href="#contact">Portfolio</a>
-                        <a href="#about">Kontaktai</a>
-                    </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-</header>
 
-    <!-- <header>
+    <header>
         <section class="container bg-main header" id="header">
             <div class="hidden visible-flex-lg header-menu-container nav">
                 <img class="logo" src="./img/zlogo.png" alt="logo">
                 <div class="nav">
+
                     <nav class="menu">
                         <a class="link" href="/#about">Apie mane</a>
                         <a class="link" href="/#work">Portfolio</a>
                         <a class="link" href="/#contacts">Kontaktai</a>
+                        <a class="link-cv" href="/cv.html">CV</a>
                     </nav>
+
                 </div>
+
             </div>
             <div class="nav hidden-lg">
                 <div class="mobile-container">
@@ -70,15 +44,18 @@
                             <a href="/#about">Apie mane</a>
                             <a href="/#work">Portfolio</a>
                             <a href="/#contacts">Kontaktai</a>
+                            <a href="/cv.html">CV</a>
                         </div>
+
                         <a href="javascript:void(0);" class="icon" onclick="menuLinks()">
                             <i class="fa fa-bars"></i>
                         </a>
                     </div>
+
                 </div>
             </div>
         </section>
-    </header> -->
+    </header>
 
     <main class="bg-main">
         <!-- HERO -->
@@ -267,8 +244,8 @@
                     2022 - 2024 &copy; Živilė Vibrė
                 </div>
                 <div class="col-12 col-lg-6 align-right">
-                    <a class="social" href="https://www.linkedin.com/in/zivilevibre"><svg width="30" height="31" viewBox="0 0 20 21"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="social" href="https://www.linkedin.com/in/zivilevibre"><svg width="30" height="31"
+                            viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.6084 10.0606V10.0334C10.6028 10.0426 10.5968 10.0518 10.5908 10.0606H10.6084Z"
                                 fill="#819199" />
                             <path
@@ -294,8 +271,16 @@
     </footer>
     <!-- musu script -->
     <script src="./js/pages/home.js" type="module" defer></script>
-    <script src="js/components/menu.js" type="module" defer></script>
 
+    <script>function menuLinks() {
+            var menuLink = document.getElementById('myLinks');
+            if (menuLink.style.display === 'block') {
+                menuLink.style.display = 'none';
+            } else {
+                menuLink.style.display = 'block';
+            }
+        }
+    </script>
     <script>function scrollAnimate(targethash) {
 
             var offset = 0;
@@ -333,4 +318,3 @@
 </body>
 
 </html>
-

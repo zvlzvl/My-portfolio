@@ -25,12 +25,16 @@
             <div class="hidden visible-flex-lg header-menu-container nav">
                 <img class="logo" src="./img/zlogo.png" alt="logo">
                 <div class="nav">
+
                     <nav class="menu">
                         <a class="link" href="/#about">Apie mane</a>
                         <a class="link" href="/#work">Portfolio</a>
                         <a class="link" href="/#contacts">Kontaktai</a>
+                        <a class="link-cv" href="/cv.html">CV</a>
                     </nav>
+
                 </div>
+
             </div>
             <div class="nav hidden-lg">
                 <div class="mobile-container">
@@ -40,16 +44,18 @@
                             <a href="/#about">Apie mane</a>
                             <a href="/#work">Portfolio</a>
                             <a href="/#contacts">Kontaktai</a>
+                            <a href="/cv.html">CV</a>
                         </div>
+
                         <a href="javascript:void(0);" class="icon" onclick="menuLinks()">
                             <i class="fa fa-bars"></i>
                         </a>
                     </div>
+
                 </div>
             </div>
         </section>
     </header>
-
     <main class="bg-main">
       <section class="container hero bg-main" id="whatToPrint">
         <div>
@@ -116,7 +122,15 @@
     </footer>
     <!-- musu script -->
     <script src="./js/pages/home.js" type="module" defer></script>
-    <script src="js/components/menu.js"  defer></script>
+    <script>function menuLinks() {
+        var menuLink = document.getElementById('myLinks');
+        if (menuLink.style.display === 'block') {
+            menuLink.style.display = 'none';
+        } else {
+            menuLink.style.display = 'block';
+        }
+    }
+</script>
     <script>
         async function generatePDF() {
             document.getElementById("downloadButton").innerHTML = "Kraunama. Prašau palaukite...";
