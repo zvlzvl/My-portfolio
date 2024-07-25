@@ -1,9 +1,11 @@
 :root {
     --main-color: #fefaf8;
     --dark-color: #333334;
+ 
     --accent-color: #d40091;
     --black-color: #191c21;
     --light-color:#E2DFDA;
+    --pink-color: rgb(253, 236, 236);
 }
 
 body,
@@ -33,7 +35,10 @@ body {
     background-color: var(--black-color);
     color: var(--main-color);
 }
-
+.bg-pink {
+    background-color: var(--pink-color);
+    color: var(--dark-color);
+}
 p {
     margin-top: 20px;
     font-size: 28px;

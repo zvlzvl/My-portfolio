@@ -1,0 +1,50 @@
+.cv-hero{
+    letter-spacing: 5px;
+}
+.cv-button {
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid var(--accent-color);
+    border-radius: 25px;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+}
+
+.cv-button:hover {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+
+}
+
+.cv-button:focus {
+    color: white;
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
+
+}
+h3.center{
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+h4.cv{
+font-size: 18px;
+font-style: normal;
+letter-spacing: 1;
+}
+div.cv{
+    margin: 0;
+font-size: 16px;
+font-style: normal;
+letter-spacing: 1;
+line-height: normal;
+}
+.cv-col{
+padding: 0 !important;
+margin: 0 0 0 5px !important;
+}
+
+

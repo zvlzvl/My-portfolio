@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/pages/home.css">
     <!-- analytics script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.223/styles/kendo.common.min.css" />
+    <script src="https://kendo.cdn.telerik.com/2017.1.223/js/jszip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.1.223/js/kendo.all.min.js"></script>
 
 </head>
 
@@ -57,19 +59,69 @@
         </section>
     </header>
     <main class="bg-main">
-      <section class="container hero bg-main" id="whatToPrint">
-        <div>
-            <div>
-                    <p>Esu jaunesnioji programuotoja. Visai nesenai (prieš 3 metus) atradau IT sritį ir buvau labai
-                        maloniai nustebinta kaip ji mane užvaldė. Norėčiau Labai padėkoti įkvėpėjams pasukti IT keliu
-                        tai WomenGotech projektui, pradinių žinių bei įgūdžių dėstytojams iš Baltijos technologijų
-                        intituto bei pirmam darbdaviui integravusiam mane į "tikrą žaidimą" už didžiulį žinių bei
-                        įgūdžių bagažą MB Suavis vadovui Aidui B. </p>
+        <section class="hero">
+            <div class="row">
+                <div class="pdf-page hidden visible-lg col-lg-12">
+                    <page size="A4">
+                        <!-- PDF CONTENT START -->
+                        <section class="container bg-dark">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="center">ŽIVILĖ VIBRĖ</h2>
+                                    <h3 class="center">PROGRAMUOTOJA JAUNESNIOJI</h3>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="row">
+                                <div class="col-12 cv-col">
+                                    <h4 class="cv">PATIRTIS</h2>
+                                </div>
+                            </div>
+                           
+                            <div class="row">                           
+                                <div class="col-4 cv-col">
+                                    <div class="cv">2021 09 - 2024 01</div>
+                                </div>
+                                <div class="col-8 cv-col">
+                                    <div class="cv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et natus ad repellat magni temporibus vero sequi facilis reiciendis quidem minima modi assumenda delectus saepe praesentium vel, numquam deserunt minus maiores!</div>
+                                </div>
+                            </div>
+
+                            <div class="row">                           
+                                <div class="col-4 cv-col">
+                                    <div class="cv">2021 09 - 2024 01</div>
+                                </div>
+                                <div class="col-8 cv-col">
+                                    <div class="cv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et natus ad repellat magni temporibus vero sequi facilis reiciendis quidem minima modi assumenda delectus saepe praesentium vel, numquam deserunt minus maiores!</div>
+                                </div>
+                            </div>
+
+                            <div class="row">                           
+                                <div class="col-4 cv-col">
+                                    <div class="cv">2021 09 - 2024 01</div>
+                                </div>
+                                <div class="col-8 cv-col">
+                                    <div class="cv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et natus ad repellat magni temporibus vero sequi facilis reiciendis quidem minima modi assumenda delectus saepe praesentium vel, numquam deserunt minus maiores!</div>
+                                </div>
+                            </div>
+
+                            <div class="row">                           
+                                <div class="col-4 cv-col">
+                                    <div class="cv">2021 09 - 2024 01</div>
+                                </div>
+                                <div class="col-8 cv-col">
+                                    <div class="cv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et natus ad repellat magni temporibus vero sequi facilis reiciendis quidem minima modi assumenda delectus saepe praesentium vel, numquam deserunt minus maiores!</div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- PDF CONTENT END -->
+                    </page>
                 </div>
-            </div>
+                <!-- <div class="responsive-message"></div> -->
+                <button class="cv-button" id="pdf-generate">Download</button>
         </section>
-        <a href="javascript:generatePDF()" id="downloadButton">Atsisiųsti</a>
-    <!-- FOOTER -->
+    </main>
     <footer>
         <section class="container bg-dark">
             <div class="row footer">
@@ -94,8 +146,8 @@
                     2022 - 2024 &copy; Živilė Vibrė
                 </div>
                 <div class="col-12 col-lg-6 align-right">
-                    <a class="social" href="https://www.linkedin.com/in/zivilevibre"><svg width="30" height="31" viewBox="0 0 20 21"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="social" href="https://www.linkedin.com/in/zivilevibre"><svg width="30" height="31"
+                            viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.6084 10.0606V10.0334C10.6028 10.0426 10.5968 10.0518 10.5908 10.0606H10.6084Z"
                                 fill="#819199" />
                             <path
@@ -123,37 +175,64 @@
     <!-- musu script -->
     <script src="./js/pages/home.js" type="module" defer></script>
     <script>function menuLinks() {
-        var menuLink = document.getElementById('myLinks');
-        if (menuLink.style.display === 'block') {
-            menuLink.style.display = 'none';
-        } else {
-            menuLink.style.display = 'block';
-        }
-    }
-</script>
-    <script>
-        async function generatePDF() {
-            document.getElementById("downloadButton").innerHTML = "Kraunama. Prašau palaukite...";
-            var downloading = document.getElementById("whatToPrint");
-            var doc = new jsPDF('1', 'pt', 'a4');
-            await html2canvas(downloading, {
-                //allowTaint: true,
-                //useCORS: true,
-                width: 550
-            }).then((canvas) => {
-                doc.addImage(canvas.toDataURL("img/png"),'PNG', 5, 5, 500, 500)
-            });
-            doc.save(Document.pdf);
-
-
-            document.getElementById("downloadButton").innerHTML = "Parsisiųsti";
-
+            var menuLink = document.getElementById('myLinks');
+            if (menuLink.style.display === 'block') {
+                menuLink.style.display = 'none';
+            } else {
+                menuLink.style.display = 'block';
+            }
         }
     </script>
 
+    <script>
+        kendo.pdf.defineFont({
+            "DejaVu Sans": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans.ttf",
+            "DejaVu Sans|Bold": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Bold.ttf",
+            "DejaVu Sans|Bold|Italic": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf",
+            "DejaVu Sans|Italic": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf"
+        });
+    </script>
+
+    <!-- Load Pako ZLIB library to enable PDF compression -->
+    <!-- <script src="../content/shared/js/pako.min.js"></script> -->
+
+    <script>
+        function getPDF(selector) {
+            kendo.drawing.drawDOM($(selector)).then(function (group) {
+                kendo.drawing.pdf.saveAs(group, 'testing.pdf');
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        $('#pdf-generate').click(function () {
+            getPDF('.pdf-page');
+        })
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        page[size="A4"] {
+            width: 790px;
+            height: 1000px;
+        }
+
+        page {
+            background: white;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <style>
+        /*
+        Use the DejaVu Sans font for display and embedding in the PDF file.
+        The standard PDF fonts have no support for Unicode characters.
+    */
+        .pdf-page {
+            font-family: "DejaVu Sans", "Arial", sans-serif;
+        }
+    </style>
 </body>
 
 </html>
-
-          
-
