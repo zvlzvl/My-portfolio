@@ -62,7 +62,7 @@
                 <div class="col-10 ml-1 hidden-xl">
                     <img src="./img/cv.png" class="cv-img" width="100%" alt="cv">
                 </div>       
-                <div hidden class="pdf-page visible-xl col-xl-12" id="pdf-page">
+                <div class="pdf-page hidden visible-xl col-xl-12" id="pdf-page">
                     <page size="A4">
                         <!-- PDF CONTENT START -->
                         <section class="container bg-dark">
@@ -296,7 +296,18 @@
         }
     </script> -->
 
-   
+   <style>
+    page[size="A4"] {
+        width: 790px;
+        height: 1000px;
+    }
+    
+    page {
+        background: white;
+        display: block;
+        margin: 0 auto;
+    }
+   </style>
 
 </body>
 
