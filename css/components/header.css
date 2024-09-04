@@ -16,7 +16,10 @@ header {
 
 
 }
-
+a.mob{
+    padding-top:0 !important;
+    padding-bottom: 0!important;
+}
 .header {
     /* margin-left: 1rem;
     line-height: 50px;
