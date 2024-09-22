@@ -12,8 +12,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/pages/home.css">
-    <link rel="stylesheet" href="./css/pages/home.css">
-    <!-- analytics script -->
+    <!-- pdf generate -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.223/styles/kendo.common.min.css" />
+    <script src="https://kendo.cdn.telerik.com/2017.1.223/js/jszip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.1.223/js/kendo.all.min.js"></script> -->
 
 </head>
 
@@ -61,7 +64,7 @@
         <section class="hero">
             <div class="row">
                 <div class="col-10 ml-1 hidden-xl">
-                    <img src="./img/cv.png" class="cv-img" width="100%" alt="cv">
+                    <img src="./img/cv.jpg" class="cv-img" width="100%" alt="cv">
                 </div>
                 <div class="pdf-page hidden visible-xl col-xl-12" id="pdf-page">
                        <!-- PDF CONTENT START -->
@@ -210,8 +213,12 @@
                  
                     </page>
                         <!-- PDF CONTENT END -->
+                        
                 </div>
-
+                 <!-- PDF GENERATE BUTTON -->
+                    <!-- <button onclick="getPDF()" class="cv-button" id="pdf-generate">
+                        generuoti CV
+                    </button> -->
                 <div class="cv-items">
                     <button type="submit" onclick="window.open('./img/cv.pdf')" class="cv-button"> Atsisiųsti
                         CV</button>
@@ -322,6 +329,40 @@
         }
     </script>
 
+
+        <!-- musu script -->
+        <script src="./js/pages/home.js" type="module" defer></script>
+        <script>function menuLinks() {
+                var menuLink = document.getElementById('myLinks');
+                if (menuLink.style.display === 'block') {
+                    menuLink.style.display = 'none';
+                } else {
+                    menuLink.style.display = 'block';
+                }
+            }
+        </script>
+    <!-- PDF GENERATE SCRIPTS
+        <script>
+            kendo.pdf.defineFont({
+                "DejaVu Sans": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans.ttf",
+                "DejaVu Sans|Bold": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Bold.ttf",
+                "DejaVu Sans|Bold|Italic": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf",
+                "DejaVu Sans|Italic": "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf"
+            });
+        </script>
+   
+        <script>
+            function getPDF(selector) {
+                kendo.drawing.drawDOM($(selector)).then(function (group) {
+                    kendo.drawing.pdf.saveAs(group, 'cv.pdf');
+                });
+            }
+        </script>
+        <script type="text/javascript">
+            $('#pdf-generate').click(function () {
+                getPDF('.pdf-page');
+            })
+        </script> -->
 </body>
 
 </html>
