@@ -38,17 +38,17 @@
                 <div class="mobile-container">
                     <div class="topnav">
                         <a href="#about">
-                            <img class="logo" src="./img/zlogo.png" alt="logo">    
+                            <img class="logo" src="./img/zlogo.png" alt="logo">
                         </a>
-                        <div class ="mob-links" id="myLinks">
-                            <a href="#about">Apie mane</a>
-                            <a href="#work">Portfolio</a>
-                            <a href="#contacts">Kontaktai</a>
+                        <div class="mob-links" id="myLinks">
+                            <a href="/#about">Apie mane</a>
+                            <a href="/#work">Portfolio</a>
+                            <a href="/#contacts">Kontaktai</a>
                             <a href="cv.html">CV</a>
                         </div>
 
                         <a href="javascript:void(0);" class="icon" onclick="menuLinks()">
-                            <i id="close" class="fa fa-bars"></i>   
+                            <i id="close" class="fa fa-bars"></i>
                         </a>
                     </div>
 
@@ -58,164 +58,166 @@
     </header>
 
     <main class="bg-main">
-        <!-- HERO -->
-        <section class="container hero bg-main" id="about">
+        <section class="hero">
             <div class="row">
-                <div class="col-12 col-lg-8">
-                    <h4 class="hero-h4">Živilė Vibrė</h4>
-                    <div class="underline"></div>
-                    <h1>
-                        <em class="thin">PHP </em>
-                        Programuotoja
-                        <br>
-                        <em class="small">jaunesnioji</em>
-                    </h1>
-                    <p>Esu jaunesnioji programuotoja. Visai nesenai (prieš 3 metus) atradau IT sritį ir buvau labai
-                        maloniai nustebinta kaip ji mane užvaldė. Norėčiau Labai padėkoti įkvėpėjams pasukti IT keliu
-                        tai WomenGotech projektui, pradinių žinių bei įgūdžių dėstytojams iš Baltijos technologijų
-                        intituto bei pirmam darbdaviui integravusiam mane į "tikrą žaidimą" už didžiulį žinių bei
-                        įgūdžių bagažą MB Suavis vadovui Aidui B. </p>
+                <div class="col-10 ml-1 hidden-xl">
+                    <img src="./img/cv.png" class="cv-img" width="100%" alt="cv">
                 </div>
+                <div class="pdf-page hidden visible-xl col-xl-12" id="pdf-page">
+                       <!-- PDF CONTENT START -->
+                    <page size="A4">
+                        <section class="container bg-dark">
+                            <div class="row">
+                                <div class="col-12 header-cv">
+                                    <h2 class="center">ŽIVILĖ VIBRĖ</h2>
+                                    <h3 class="center">PROGRAMUOTOJA JAUNESNIOJI</h3>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="row">
+                                <div class="col-12 cv-col">
+                                    <h4 class="cv">
+                                        Esu jaunesnioji programuotoja, ieškanti naujų išūkių. Nesenai pasukau IT
+                                        kryptimi. Turiu 2+ metų patirtį
+                                        dirbant su Laravel karkasu vidinio programavimo ("Back-end") programuotoja. Esu
+                                        atvira naujovėms ir pasiruošusi mokytis naujų technologijų. Daugiau informacijos
+                                        ir mano darbus rasite mano portfolio. </h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 cv-col">
+                                    <h4 class="cv cv-border bg">IT PATIRTIS</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4 cv-col">
+                                    <div class="cv">2021 09 - 2024 01</div>
+                                </div>
+                                <div class="col-8 cv-col">
+                                    <div>
+                                        MB "Suavis", Lietuva Jaunesnioji programuotoja. <br>
+                                        Kurti bei administruoti 5mon4s tinklalapį traficero.com. Darbas su Laravel
+                                        karkasu vidinio programavimo ("Back-end") programuotoja. Puslapio funkcinalumo
+                                        kurimas, duomenų bazių valdymas, sukurto WEB dizaino perkėlimas ir adaptavimas
+                                        prie laravel karkaso.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 cv-col">
+                                    <h4 class="cv cv-border bg">KT. PATIRTIS</h4>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4 cv-col">
+                                    <div class="cv">2012 09 - 2019 10</div>
+                                </div>
+                                <div class="col-8 cv-col">
+                                    <div class="cv">UAB "Sorpo Consulting", Lietuva Projektų vadovė <br>
+                                        ES paramos socialinėms įmonėms projektų kūrimas, valdymas, paraiškų teikimas.
+                                        Socialinių įmonių administravimas.</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4 cv-col">
+                                    <div class="cv">2007 01 - 2011 06</div>
+                                </div>
+                                <div class="col-8 cv-col">
+                                    <div class="cv">UAB "Limeta" Lietuva Parduotuvės vedėja <br>
+                                        Medicinos prekių bei įrangos pardavimas.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-4 cv-col">
+                                    <div class="cv">2005 07 - 2006 11</div>
+                                </div>
+                                <div class="col-8 cv-col">
+                                    <div class="cv"> UAB "Merkurita", Lietuva Pardavimų vadybininkė<br>
+                                        Tiesioginiai pardavimai vilnos gaminiais.
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="row m-0">
+                                <div class="col-8" style="margin-left:20px; margin-right: 20px;">
+                                    <h4 class="cv cv-border bg">
+                                        IŠSILAVINIMAS
+                                    </h4>
+                                    <div class="row">
+                                        <div class="col-6 cv-border m-0">
+                                            <div class="cv m-0">2002 - 2006</div>
+                                        </div>
+                                        <div class="col-9 cv-border"
+                                            style="margin-top: 0; margin-bottom:0; margin-right:0; margin-left: 3px; padding-left: 4px;">
+                                            <div class="cv m-0" style="font-size: 15px;">
+                                                <b>Klaipėdos universitetas,Lietuva</b><br>Vadybos ir verslo
+                                                administravimo bakalauras
+                                            </div>
+                                        </div>
+                                        <div class="col-6 cv-border" style="margin:10px 0 0 0;">
+                                            <div class="cv m-0">
+                                                2021 01 - 2021 06
+                                            </div>
+                                        </div>
+                                        <div class="col-9 cv-border" style="margin:10px 0 0 3px; padding-left: 4px;">
+                                            <div class="cv" style="font-size: 15px;">
+                                                <b>UAB Baltijos technologijų institutas, Lietuva</b> <br> Žiniatinklio
+                                                programuotojas, LTKS IV
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5" style="margin-left:0; margin-right:0;">
+                                    <h4 class="cv cv-border bg">
+                                        INTERNETE
+                                    </h4>
+                                    <div class="col-3 cv-border" style="padding-bottom: 35px;">
+                                        <div><b>Linkedin:</b> <br>www.linkedin.com/in/zivilevibre</div>
+                                        <div><b>Portfolio:</b> <br>https://zvlzvl.github.io/portfolio/</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-8" style="margin: 0 20px">
+                                    <h4 class="cv cv-border bg">
+                                        ĮGŪDŽIAI
+                                    </h4>
+                                    <div>PHP, PHP Pest, MySQL, GIT, OOP, LARAVEL, BACK-END, FRONT-END pagrindai,
+                                        WordPress, Elementor,
+                                        HTML, CSS pagrindai, JS pagrindai.
+                                    </div>
+                                </div>
+                                <div class="col-5 m-0">
+                                    <h4 class="cv cv-border bg">
+                                        KONTAKTAI
+                                    </h4>
+                                    <div class="col-3 cv-border" style="padding-bottom: 35px;">
+                                        <div>Klaipėda, Lietuva</div>
+                                        <div>Tel. nr.: +37061612424</div>
+                                        <div>El. paštas.: to@zivile.dev</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                 
+                    </page>
+                        <!-- PDF CONTENT END -->
+                </div>
+
+                <div class="cv-items">
+                    <button type="submit" onclick="window.open('./img/cv.pdf')" class="cv-button"> Atsisiųsti
+                        CV</button>
+                </div>
+
             </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section class="container-cut">
-            <section class="container dark-right-up"></section>
-        </section>
-        <section class="container bg-dark">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="center">IŠSILAVINIMAS</h2>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="title">
-                        <img height="auto" width="70px" src="./img/klaipeda_university_logo.jpg" alt="logo">
-                        <h3>Klaipėdos Universitetas</h3>
-                    </div>
-                    <h4>2002 - 2006 Vadybos ir verslo administravimo bakalauras</h4>
-                    <h5>Įgyti įgūdžiai/kompetencijos:</h5>
-                    <p> Įgytos kognityvinės, funkcinės, asmeninės ir etinės
-                        kompetencijos
-                        bei įgūdžiai gebėti demonstruoti vadybos metodų bei priemonių taikymą nuolat kintančioje
-                        aplinkoje dirbant žemiausios ir vidutinės grandies vadovais bet kurioje verslo organizacijoje.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="title">
-                        <img height="auto" width="70px" src="./img/baltic_talents_academy_logo.jpg" alt="logo">
-                        <h3>Baltijos Technologijų Institutas</h3>
-                    </div>
-                    <h4>2021 01 - 2021 06 Žiniatinklio programuotojo modulinė profesinio mokymo programa
-                        LTKS IV</h4>
-                    <h5>Įgyti įgūdžiai/kompetencijos:</h5>
-                    <p> Taikyti objektinio programavimo technologiją, kuriant
-                        internetinius
-                        puslapius tam pritaikyta programavimo kalba. Projektuoti, kurti ir administruoti internetinius
-                        puslapius. Kurti ir vykdyti nesudėtingus tinklalapių testavimo atvejus.
-                        (Full stack) kursas.
-                        Frontend programavimas: HMTL, CSS, Javascript,
-                        Objektinis programavimas: Java.
-                        Backend programavimas: PHP (Laravel)
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="container-cut">
-            <section class="container dark-right-down"></section>
-        </section>
-
-
-        <section class="container bg-main">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="hidden-lg">
-                        <h2 class="center">Programavimo patirtis</h2>
-                    </div>
-                    <div class="hidden visible-lg">
-                        <h2>Programavimo patirtis</h2>
-                    </div>
-                    <h3> MB "Suavis" jaunesnioji programuotoja <br>
-                        <em class="thin">2021 09 - 2024 01</em>
-                    </h3>
-                    <p>
-                        Kurti bei administruoti įmonės tinklalapį traficero.com. Darbas su Laravel karkasu vidinio
-                        programavimo ("Back-end") programuotoja. Puslapio funkcionalumo kūrimas, duomenų bazių valdymas,
-                        funkcionalumo testavimas,
-                        sukurto WEB dizaino perkėlimas ir adaptavimas prie laravel karkaso.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <h2>Gebėjimai</h2>
-                    <p>PHP, PHP Pest, MySQL, GIT, OOP, LARAVEL, BACK-END, FRONT-END pagrindai, WordPress, Elementor,
-                        HTML, CSS pagrindai, JS pagrindai.</p>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- PORTFOLIO -->
-        <section class="container-cut" id="work">
-            <section class="container black-right-up"></section>
-        </section>
-        <section class="container bg-black">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="center">Mano darbai</h2>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-12 col-lg-6 portf-content">
-                    <h3>Traficero.com<br> <em class="thin" style="font-size: 16px;">(jūrinių konteinerių sekimo
-                            programa)</em></h3>
-
-                    <h5>Mano funkcijos:</h5>
-                    <ul>
-                        <li>puslapio funkcionalumo programavimas bei kūrimas (back-end)</li>
-                        <li>sukurto ir suprogramuoto dizaino perkėlimas ir
-                            adaptavimas prie Laravel blade formato (front-end)</li>
-                        <li>gautų duomenų apie konteinerių buvimo vietą
-                            apdorojimas, susisteminimas į duomenų bazes bei pateikimas klientui</li>
-                        <li>kliento prisijungimo sistema, jo sekamų konteinerių
-                            ataskaita, pranešimai, filtravimas, rūšiavimas, duomenų eksportavimas į excel</li>
-                        <li>apmokėjimo sistemos integracija</li>
-                        <li>API klientams kūrimas</li>
-                        <li>validacijos</li>
-                        <li>testai</li>
-                    </ul>
-                </div>
-                <img class="col-12 col-lg-6 portf-img" src='./img/traficero/traficero.png'>
-            </div>
-            <div class="row">
-                <img class="hidden visible-lg col-lg-6 portf-img" src='./img/bitmanija/bitmanija.png'>
-                <div class="col-12 col-lg-6 portf-content">
-                    <h3>bitmanija.lt <br><em class="thin" style="font-size: 16px;">(internetinė parduotuvė)</em></h3>
-                    <h5>Mano funkcijos:</h5>
-                    <ul>
-                        <li>puslapio dizaino kūrimas pasitelkiant WordPress ir Elementor</li>
-                        <li>mokėjimo sistemos integravimas</li>
-                    </ul>
-                </div>
-                <img class="col-12 hidden-lg portf-img" src='./img/bitmanija/bitmanija.png'>
-
-            </div>
-
-        </section>
-        <section class="container-cut">
-            <section class="container black-right-down"></section>
-        </section>
-        <!-- CONTACT ME -->
-
-        <section class="container bg-main" id="contacts">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="center">Susisiekime</h2>
-                    <p style="text-align: center; padding-top:10px;">Pasidalinkite savo lūkesčiais bei idėjomis ir aš
-                        mielai prisidėsiu prie jų įgyvendinimo. </p>
-                    <p style="text-align: center; ">to<span style="color:#d40091;font-size:33px;">@</span>zivile.dev</p>
-                </div>
         </section>
     </main>
 
@@ -228,14 +230,14 @@
                     <a href="#about"><img height="60px" width="auto" src="./img/zvpilka.png" alt="logo"></a>
                     <div>
                         <nav class="hidden visible-flex-md">
-                            <a class="link-footer" href="#about">Apie mane</a>
-                            <a class="link-footer" href="#work">Portfolio</a>
-                            <a class="link-footer" href="#contacts">Kontaktai</a>
+                            <a class="link-footer" href="/#about">Apie mane</a>
+                            <a class="link-footer" href="/#work">Portfolio</a>
+                            <a class="link-footer" href="/#contacts">Kontaktai</a>
                         </nav>
                         <nav class="menu-mob hidden-md">
-                            <a class="link-footer" href="#about">Apie mane</a>
-                            <a class="link-footer" href="#work">Portfolio</a>
-                            <a class="link-footer" href="#contacts">Kontaktai</a>
+                            <a class="link-footer" href="/#about">Apie mane</a>
+                            <a class="link-footer" href="/#work">Portfolio</a>
+                            <a class="link-footer" href="/#contacts">Kontaktai</a>
                         </nav>
                     </div>
                 </div>
@@ -283,7 +285,7 @@
                 menuLink.style.display = 'block';
                 closeIcon.classList = "fa fa-close"
             }
-       
+
         }
     </script>
     <script>function scrollAnimate(targethash) {
